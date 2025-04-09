@@ -1,10 +1,10 @@
-# 🧠 Puneet Sharma's Data Science & Analytics Portfolio
+#  Puneet Saini's Data Science & Analytics Portfolio
 
 Welcome to my data project portfolio! This repository showcases my end-to-end data analytics and machine learning projects, demonstrating my skills in data wrangling, visualization, and predictive modeling.
 
 ---
 
-## 📁 Projects Included
+##  Projects Included
 
 ### 1. 🧾 Loan Approval Prediction
 **Goal:** Predict whether a loan application will be approved based on financial and demographic data.  
