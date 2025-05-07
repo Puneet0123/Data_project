@@ -6,7 +6,7 @@ This project focuses on segmenting customers of a UK-based e-commerce business u
 
 ##  Dataset
 
-- **Source**: [UCI Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)
+- **Source**: [UCI Online Retail Dataset](https://www.kaggle.com/datasets/carrie1/ecommerce-data/data)
 - **Time Period**: December 2010 to December 2011
 - **Contains**:
   - Transactions from a UK-based online retailer
@@ -59,9 +59,9 @@ This project focuses on segmenting customers of a UK-based e-commerce business u
 
 ## Key Insights
 
-- **Cluster 0**: High-frequency, high-monetary, low-recency → 💎 *Loyal High-Value Customers*
-- **Cluster 1**: Moderate frequency and spend → 📈 *Growth Potential*
-- **Cluster 2**: Low frequency, high recency → ⚠️ *At-Risk Customers*
+- **Cluster 0**: Moderate frequency and spend →  *Growth Potential*
+- **Cluster 1**:Low frequency, high recency →  *At-Risk Customers*
+- **Cluster 2**: High-frequency, high-monetary, low-recency →  *Loyal High-Value Customers*
 - DBSCAN identified several **noise points**, helping separate outliers from core groups.
 - The **United Kingdom** accounted for over 90% of total revenue, suggesting market concentration.
 
@@ -69,9 +69,9 @@ This project focuses on segmenting customers of a UK-based e-commerce business u
 
 ## Business Recommendations
 
-- **Reward loyal customers** in Cluster 0 with VIP campaigns and retention incentives.
-- **Target Cluster 1** with upsell campaigns and personalized promotions.
-- **Re-engage Cluster 2** with win-back offers or churn-prevention discounts.
+- **Reward loyal customers** in Cluster 2 with VIP campaigns and retention incentives.
+- **Target Cluster 0** with upsell campaigns and personalized promotions.
+- **Re-engage Cluster 1** with win-back offers or churn-prevention discounts.
 - **Use DBSCAN noise detection** to flag potential fraudulent or irregular customers.
 
 ---
