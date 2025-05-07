@@ -83,5 +83,24 @@ This project focuses on segmenting customers of a UK-based e-commerce business u
 - Jupyter Notebook
 - Git & GitHub
 
+---
 
+##  Dashboard Preview
+
+>  See: `customer_segmentation.pdf`  
+This dashboard presents KPIs, RFM-based segment visuals, geographic revenue breakdown, and DBSCAN vs KMeans comparison.
+
+---
+
+##  Author
+
+**Puneet Singh**  
+Aspiring Data Analyst | Python, SQL, Power BI | Machine Learning & Business Intelligence Enthusiast  
+[LinkedIn](https://www.linkedin.com/in/puneet471/) | [Portfolio](https://github.com/Puneet0123/Data_project/tree/main)
+
+---
+
+## License
+
+This project is for educational and portfolio purposes.
 
