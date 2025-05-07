@@ -1,62 +1,87 @@
-#  Customer Segmentation using RFM Analysis and Clustering
+# Customer Segmentation using RFM Analysis & Clustering
 
-This project applies **RFM (Recency, Frequency, Monetary) analysis** and unsupervised learning (KMeans, DBSCAN) to segment customers based on their purchasing behavior. It includes a professional **Power BI dashboard** to communicate business insights effectively.
-
----
-
-## Objectives
-
-- Identify distinct customer segments for targeted marketing.
-- Apply RFM scoring and clustering techniques.
-- Visualize segment insights with an interactive dashboard.
+This project focuses on segmenting customers of a UK-based e-commerce business using **RFM analysis** and **unsupervised machine learning algorithms** (KMeans & DBSCAN). The goal is to identify valuable customer groups to inform marketing strategies and improve customer retention.
 
 ---
 
----
+##  Dataset
 
-##  Key Techniques
-
-- **RFM Analysis**: Engineered customer features based on recency, frequency, and monetary value.
-- **Clustering Models**: 
-  - KMeans with Silhouette Analysis
-  - DBSCAN for density-based segmentation
-- **Data Scaling**: StandardScaler and RobustScaler tested for optimal results.
-- **Power BI Dashboard**:
-  - KPI Cards (Segment Size, Revenue)
-  - Donut Charts (Cluster Distribution)
-  - Cluster-Wise Behavior Insights
-  - Summary with Insightful Icons
+- **Source**: [UCI Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)
+- **Time Period**: December 2010 to December 2011
+- **Contains**:
+  - Transactions from a UK-based online retailer
+  - 541,909 rows | 8 features
+  - Columns: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country
 
 ---
 
-## 🔍 Insights
+## Project Objectives
 
-- Identified 4 meaningful customer clusters.
-- One dominant high-value cluster (3054 customers).
-- A niche but highly profitable segment with only 13 customers.
-- Segmentation enables personalized marketing strategies.
-
----
-##  Preview
-
-![Dashboard Preview](images/dashboard_preview.png)
+- Clean and preprocess e-commerce transactional data
+- Engineer **RFM features (Recency, Frequency, Monetary)** for each customer
+- Apply **KMeans** clustering to segment customers based on RFM behavior
+- Use **DBSCAN** to identify noise and density-based clusters
+- Visualize and interpret clusters to extract business insights
 
 ---
 
-##  Tools Used
+##  Methodology
 
-- Python (Pandas, Scikit-learn, Matplotlib, Seaborn)
+### 1. Data Cleaning
+- Removed canceled orders (`InvoiceNo` starting with 'C')
+- Removed missing Customer IDs
+- Removed rows with non-positive Quantity or UnitPrice
+
+### 2. RFM Feature Engineering
+- **Recency**: Days since last purchase
+- **Frequency**: Number of unique invoices
+- **Monetary**: Total spend by customer
+- Applied quantile-based filters to remove outliers
+
+### 3. Clustering Models
+- **KMeans Clustering**:
+  - Standardized RFM features
+  - Used Elbow Method and Silhouette Score to determine optimal `k`
+  - Segmented customers into 3 main clusters
+
+- **DBSCAN Clustering**:
+  - Captured noise/outliers
+  - Detected density-based customer groupings
+
+### 4. Visualization
+- RFM Distribution by Cluster
+- PCA-based cluster projections
+- DBSCAN vs KMeans cluster comparison table
+- Revenue by Country
+- Customer share by segment
+
+---
+
+## Key Insights
+
+- **Cluster 0**: High-frequency, high-monetary, low-recency → 💎 *Loyal High-Value Customers*
+- **Cluster 1**: Moderate frequency and spend → 📈 *Growth Potential*
+- **Cluster 2**: Low frequency, high recency → ⚠️ *At-Risk Customers*
+- DBSCAN identified several **noise points**, helping separate outliers from core groups.
+- The **United Kingdom** accounted for over 90% of total revenue, suggesting market concentration.
+
+---
+
+## Business Recommendations
+
+- **Reward loyal customers** in Cluster 0 with VIP campaigns and retention incentives.
+- **Target Cluster 1** with upsell campaigns and personalized promotions.
+- **Re-engage Cluster 2** with win-back offers or churn-prevention discounts.
+- **Use DBSCAN noise detection** to flag potential fraudulent or irregular customers.
+
+---
+
+##  Tools & Technologies Used
+
+- Python (Pandas, NumPy, Scikit-learn, Seaborn, Matplotlib)
+- Power BI (for dashboard visualizations)
 - Jupyter Notebook
-- Power BI (for professional dashboarding)
+- Git & GitHub
 
----
 
-## Outcome
 
-This project delivers a **data-driven segmentation framework** for customer targeting, enabling smarter campaign strategies and ROI optimization.
-
----
-
-##  Contact
-
-For feedback or collaboration, connect with me on [LinkedIn](#).
