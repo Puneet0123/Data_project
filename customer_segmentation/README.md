@@ -6,7 +6,7 @@ This project focuses on segmenting customers of a UK-based e-commerce business u
 
 ##  Dataset
 
-- **Source**: [UCI Online Retail Dataset](https://archive.ics.uci.edu/ml/datasets/online+retail)
+- **Source**: [UCI Online Retail Dataset](https://www.kaggle.com/datasets/carrie1/ecommerce-data/data)
 - **Time Period**: December 2010 to December 2011
 - **Contains**:
   - Transactions from a UK-based online retailer
