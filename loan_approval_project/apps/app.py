@@ -3,8 +3,8 @@ import joblib
 import numpy as np
 
 # Load model and scaler
-model = joblib.load('../models/best_model.pkl') # only if used
-thresholds = joblib.load('../models/optimal_threshold.pkl')
+model = joblib.load('best_model.pkl') # only if used
+thresholds = joblib.load('optimal_threshold.pkl')
 # Streamlit UI
 st.title(" Loan Approval Prediction App")
 
