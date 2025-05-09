@@ -1,22 +1,14 @@
 # Core Libraries
-numpy==1.24.4
-pandas==2.0.3
+numpy
+pandas
 
 # Visualization
-matplotlib==3.7.1
-seaborn==0.12.2
+matplotlib
+seaborn
 
 # Modeling & Evaluation
-scikit-learn==1.3.0
-xgboost==1.7.6
-
-
-# Dashboarding / Deployment 
-streamlit==1.25.0
-
-# Saving Models
-joblib==1.3.2
-
+scikit-learn
+joblib
 
 # Environment/Notebook Support
 jupyterlab==4.0.6
