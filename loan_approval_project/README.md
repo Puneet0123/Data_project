@@ -67,24 +67,23 @@ These align with real-world banking criteria and provide model transparency.
 - Python, Pandas, NumPy, Scikit-learn
 - Seaborn & Matplotlib for data viz
 - XGBoost, RandomForestClassifier
-- Power BI / Streamlit for dashboards
-- SHAP (optional) for model explainability
+- Power BI for dashboards
 - `joblib` for model serialization
 
 ---
 
 ### Dataset
 
-- Source: [Kaggle / Public Loan Dataset] *()*
+- Source: [Dataset] (https://www.kaggle.com/datasets/ninzaami/loan-predication)
 - Size: ~600 records, 13+ features
 
 ---
 
 ### Author
 
-**[Puneet Saini]**  
+**Puneet Saini**  
 Aspiring Data Scientist | Machine Learning Enthusiast  
-your.email@example.com | [LinkedIn/GitHub Link]
+sainipuneet471@gmail.com | [Linkedin](https://www.linkedin.com/in/puneet471/)
 
 ---
 

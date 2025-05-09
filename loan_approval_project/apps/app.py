@@ -4,11 +4,14 @@ import numpy as np
 
 # Load model and scaler
 model = joblib.load('../models/best_model.pkl') # only if used
-
+thresholds = joblib.load('../models/optimal_threshold.pkl')
 # Streamlit UI
 st.title(" Loan Approval Prediction App")
 
 st.markdown("Fill the form below to predict if the loan will be approved:")
+
+#Set minimun loan amount
+loan_amount = 1000
 
 # Input fields
 gender = st.selectbox("Gender", ['Male', 'Female'])
@@ -17,7 +20,7 @@ education = st.selectbox("Education", ['Graduate', 'Not Graduate'])
 self_employed = st.selectbox("Self Employed", ['Yes', 'No'])
 applicant_income = st.number_input("Applicant Income", min_value=0)
 coapplicant_income = st.number_input("Coapplicant Income", min_value=0)
-loan_amount = st.number_input("Loan Amount (in 1000s)", min_value=0)
+loan_amount = st.number_input("Loan Amount (in 1000s)", min_value=1000)
 loan_term = st.selectbox("Loan Term", [360, 180, 120, 84, 60])
 credit_history = st.selectbox("Credit History", [1.0, 0.0])
 property_area = st.selectbox("Property Area", ['Urban', 'Semiurban', 'Rural'])
@@ -51,7 +54,8 @@ input_data = np.array([[
 
 # Prediction
 if st.button("Predict Loan Approval"):
-    prediction = model.predict(input_data)[0]
+    prediction_probs = model.predict_proba(input_data)[:,1]
+    prediction = (prediction_probs >= thresholds).astype(int)
     if prediction == 1:
         st.success(" Loan will likely be Approved!")
     else:
