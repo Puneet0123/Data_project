@@ -55,7 +55,7 @@ Feel free to reach out for collaboration, internship, or job opportunities:
 - [LinkedIn](https://www.linkedin.com/in/puneet471)
 - [GitHub](https://github.com/Puneet0123)
 
-## 🚀 Technologies Used
+##  Technologies Used
 - Python (Pandas, NumPy, Seaborn, Matplotlib, Scikit-learn)
 - Power BI
 - Jupyter Notebooks
