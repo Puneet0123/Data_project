@@ -14,7 +14,7 @@ Welcome to my data project portfolio! This repository showcases my end-to-end da
 - Built multiple models; selected the best using F1-score and accuracy.
 - Visualized feature importances and model evaluation metrics.
 
-[View Project](https://github.com/Puneet0123/Data_project/tree/main/loan_approval_project)
+[Project Folder](https://github.com/Puneet0123/Data_project/tree/main/loan_approval_project) <br>
 [Deployed Model](https://loan-approval-project12.streamlit.app/)
 
 ---
