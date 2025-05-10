@@ -1,9 +1,10 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
 
 # Load model and scaler
-model = joblib.load('../apps/random_forest.pkl') 
+model = joblib.load(os.path.join,'..','models','best_model.pkl') 
 thresholds = joblib.load('optimal_threshold.pkl')
 # Streamlit UI
 st.title(" Loan Approval Prediction App")
