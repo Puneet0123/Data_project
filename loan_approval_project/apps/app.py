@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 # Load model and scaler
-df = pd.read('../data/raw/loandataset.csv')
+df = pd.read_csv('../data/raw/loandataset.csv')
 thresholds = joblib.load('optimal_threshold.pkl')
 model = joblib.load("random_forest.pkl") 
 
